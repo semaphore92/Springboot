@@ -1,0 +1,21 @@
+#서버 포트 8000 , path는 기본 / 
+server:
+  port: 8000
+  servlet:
+    context-path: /
+
+spring:
+  #어플리 케이션 이름 설정
+  application:
+    name: springboot
+  #뷰 디렉토리 및 확장자는 jsp를 사용
+  mvc:
+    view:
+        prefix: /WEB-INF/jsp/
+        suffix: .jsp
+  #encoding 설정 (utf8)
+  http.encoding:
+    charset: utf-8
+    enabled: true
+    force: true
+ 
