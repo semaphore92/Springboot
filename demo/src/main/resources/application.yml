@@ -18,3 +18,8 @@ spring:
     charset: utf-8
     enabled: true
     force: true
+  datasource:
+    driver-class-name:
+    url:
+    username:
+    password:
