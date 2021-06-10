@@ -19,7 +19,9 @@ spring:
     enabled: true
     force: true
   datasource:
-    driver-class-name:
-    url:
-    username:
-    password:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://34.64.212.229:3306/OBOT_DEV?useSSL=false&characterEncoding=UTF-8&serverTimezone=UTC
+    username: root
+    password: Azaz!154646
+  jpa: 
+    show-sql: true
