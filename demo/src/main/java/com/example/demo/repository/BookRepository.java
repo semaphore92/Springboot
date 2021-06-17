@@ -1,18 +1,13 @@
-package com.god.bo.jpaTest.repository; 
+package com.example.demo.repository;
 
-
-import com.god.bo.jpaTest.vo.MemberVo; 
+import com.example.demo.domain.SW_Book;
 import org.springframework.data.jpa.repository.JpaRepository; 
 import org.springframework.stereotype.Repository; 
 import java.util.List; 
 
 @Repository 
-
-public interface MemberRepository extends JpaRepository<Book, Long> { 
+public interface BookRepository extends JpaRepository<SW_Book, Long> { 
     
-    List<MemberVo> findById(String id); 
+    SW_Book findByTitle(String title); 
     
-    public List<MemberVo> findByName(String name); 
-    
-    //like검색도 가능 public List<MemberVo> findByNameLike(String keyword); }
 }
