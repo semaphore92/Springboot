@@ -1,4 +1,4 @@
-#서버 포트 8000 , path는 기본 / 
+#서버 포트 8000 , path는 기본 /
 server:
   port: 8000
   servlet:
@@ -11,17 +11,18 @@ spring:
   #뷰 디렉토리 및 확장자는 jsp를 사용
   mvc:
     view:
-        prefix: /WEB-INF/jsp/
-        suffix: .jsp
-  #encoding 설정 (utf8)
-  http.encoding:
-    charset: utf-8
-    enabled: true
-    force: true
+      prefix: /WEB-INF/jsp/
+      suffix: .jsp
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
     url: jdbc:mysql://34.64.212.229:3306/OBOT_DEV?useSSL=false&characterEncoding=UTF-8&serverTimezone=UTC
     username: root
     password: Azaz!154646
-  jpa: 
+  jpa:
     show-sql: true
+    hibernate:
+      naming:
+        implicit-strategy: org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyHbmImpl
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+
+
