@@ -18,4 +18,14 @@ public class Book {
 
     @Column
     private int price;
+
+    @Override
+    public String toString() {
+        return "Book{" +
+                "id=" + id +
+                ", title='" + title + '\'' +
+                ", author='" + author + '\'' +
+                ", price=" + price +
+                '}';
+    }
 }
