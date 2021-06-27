@@ -1,6 +1,6 @@
 #서버 포트 8000 , path는 기본 /
 server:
-  port: 8000
+  port: 8080
   servlet:
     context-path: /
 
