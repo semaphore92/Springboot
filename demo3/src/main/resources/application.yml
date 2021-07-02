@@ -16,7 +16,7 @@ spring:
       prefix: /WEB-INF/jsp/
       suffix: .jsp
   datasource:
-    driver-class-name: com.mysql.jdbc.Driver
+    driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://34.64.212.229:3306/OBOT_DEV?useSSL=false&characterEncoding=UTF-8&serverTimezone=UTC
     username: root
     password: Azaz!154646
