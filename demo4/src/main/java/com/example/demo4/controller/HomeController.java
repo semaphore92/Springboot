@@ -1,5 +1,7 @@
 package com.example.demo4.controller;
 
+import com.example.demo4.service.SearchService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
@@ -7,9 +9,14 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RequestMapping("home")
 public class HomeController {
 
+    @Autowired
+    SearchService searchService;
+
     @RequestMapping("index")
     public String home(){
-        System.out.println("진입");
+
+        System.out.println("Home 진입");
+        searchService.saveIfNullId();
 
         return "hello";
     }
